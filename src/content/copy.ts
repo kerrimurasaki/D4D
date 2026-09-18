@@ -181,7 +181,6 @@ export const copy = {
     textLensAdd: 'add this:',
     procLens: 'Procedural lens',
     procLensAdd: 'add this instead:',
-    newTitle: 'Two prompts the first version did not have',
     readyTitle: 'What to have ready before you start',
     readyLede: 'Prompt 0 will ask for all of these. Having them to hand turns a twenty-minute exchange into a five-minute one.',
     tableNeed: 'What you need',

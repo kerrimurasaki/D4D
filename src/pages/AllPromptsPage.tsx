@@ -92,14 +92,7 @@ export function AllPromptsPage() {
       <h2 className="section-heading">{pack.coreTitle}</h2>
       <p className="-mt-2 mb-4 text-mute">{pack.coreLede}</p>
       <div className="space-y-5">
-        {[PROMPTS.p1, PROMPTS.p2, PROMPTS.p3, PROMPTS.p4].map((p) => (
-          <PromptBlock key={p.id} {...p} />
-        ))}
-      </div>
-
-      <h2 className="section-heading">{pack.newTitle}</h2>
-      <div className="space-y-5">
-        {[PROMPTS.p5, PROMPTS.p6].map((p) => (
+        {[PROMPTS.p1, PROMPTS.p2, PROMPTS.p3, PROMPTS.p4, PROMPTS.p5, PROMPTS.p6].map((p) => (
           <PromptBlock key={p.id} {...p} />
         ))}
       </div>
