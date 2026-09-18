@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 106.25%; /* Calibri runs small; stays relative so user zoom still works */
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-sand font-sans text-ink antialiased;
+    line-height: 1.55;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-serif text-deep;
+  }
+  a {
+    @apply text-deep;
+  }
+
+  /* Visible focus on every interactive element. */
+  :focus-visible {
+    outline: 3px solid theme('colors.deep');
+    outline-offset: 2px;
+  }
+  .on-dark:focus-visible,
+  .on-dark :focus-visible {
+    outline-color: theme('colors.sand');
+  }
+  /* Headings receive programmatic focus on view change; they are not interactive. */
+  [tabindex='-1']:focus {
+    outline: none;
+  }
+}
+
+@layer components {
+  .kicker {
+    @apply text-xs font-bold uppercase tracking-[0.14em] text-amber;
+  }
+  .prompt-body {
+    @apply whitespace-pre-wrap break-words rounded-lg bg-sand p-4 font-mono text-sm leading-relaxed text-ink;
+  }
+  .lens-tag {
+    @apply inline-block rounded-full px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider text-white;
+  }
+  .section-heading {
+    @apply mb-4 mt-10 border-t border-line pt-6 text-2xl font-bold;
+  }
+  .skip-link {
+    @apply absolute left-2 top-2 z-50 -translate-y-24 rounded-lg bg-amber px-4 py-3 font-semibold text-white;
+  }
+  .skip-link:focus {
+    @apply translate-y-0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-property: opacity !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
