@@ -63,8 +63,7 @@ export function AllPromptsPage() {
   return (
     <div className="mx-auto w-full max-w-3xl px-4 pb-16 pt-8 sm:px-6">
       <header className="border-b-4 border-amber-bright pb-4">
-        <p className="kicker">{pack.kicker}</p>
-        <h1 ref={headingRef} tabIndex={-1} className="mt-1 text-3xl font-bold leading-tight sm:text-4xl">
+        <h1 ref={headingRef} tabIndex={-1} className="text-3xl font-bold leading-tight sm:text-4xl">
           {pack.title}
         </h1>
         <p className="mt-2 italic text-mute">{pack.sub}</p>

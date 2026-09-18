@@ -164,7 +164,6 @@ export const copy = {
     "A practice aid for teaching design. Not a diagnostic tool, an accommodation-decision tool, or a legal determination. Formal adjustments are decided by your institution's accessibility service under institutional policy and applicable law.",
 
   pack: {
-    kicker: 'Take-home toolkit · version 2',
     title: 'The Design for Differences Prompt Pack',
     sub: 'Seven prompts for any AI assistant. Start with prompt 0 — it decides which of the others you need.',
     whyTitle: 'Why prompt 0 exists.',
