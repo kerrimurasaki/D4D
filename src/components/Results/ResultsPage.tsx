@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { assembleAll } from '../../lib/assemble';
 import { skippedAnswers } from '../../lib/router';
@@ -96,6 +96,13 @@ export function ResultsPage() {
 
 function ResultsActions({ items }: { items: ReturnType<typeof assembleAll> }) {
   const announce = useAnnounce();
+
+  // Keeps the site footer clear of the fixed bar while this page is open.
+  useEffect(() => {
+    document.documentElement.classList.add('has-action-bar');
+    return () => document.documentElement.classList.remove('has-action-bar');
+  }, []);
+
   return (
     <section
       aria-label={copy.results.actionsLabel}

@@ -146,6 +146,7 @@ describe('assembly (§12 criteria 6–9)', () => {
     });
     expect(md).toContain('`````text');
     expect(md).toContain(copy.stopAndRefer.title);
+    expect(md.trimEnd().endsWith(`${copy.footer.prefix} [${copy.footer.name}](${copy.footer.url})`)).toBe(true);
   });
 });
 

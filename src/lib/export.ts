@@ -45,5 +45,6 @@ export function markdownExport(items: AssembledPrompt[]): string {
   const { stopAndRefer } = copy;
   lines.push(`## ${stopAndRefer.title}`, '', stopAndRefer.lede, '', ...stopAndRefer.items.map((item) => `- ${item}`), '');
   lines.push('---', '', `_${copy.disclaimer}_`, '');
+  lines.push('', `${copy.footer.prefix} [${copy.footer.name}](${copy.footer.url})`, '');
   return lines.join('\n');
 }

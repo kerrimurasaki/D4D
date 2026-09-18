@@ -37,7 +37,7 @@ export function App() {
           </Link>
         </div>
       </header>
-      <main id="main" className="flex-1">
+      <main id="main" className="flex-1 pb-4">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/interview/:step" element={<InterviewPage />} />
@@ -47,6 +47,19 @@ export function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <SiteFooter />
     </div>
+  );
+}
+
+function SiteFooter() {
+  const { prefix, name, url } = copy.footer;
+  return (
+    <footer className="border-t border-line px-4 py-6 text-center text-sm text-mute">
+      {prefix}{' '}
+      <a href={url} target="_blank" rel="noreferrer" className="font-semibold text-deep underline decoration-2 underline-offset-4">
+        {name}
+      </a>
+    </footer>
   );
 }

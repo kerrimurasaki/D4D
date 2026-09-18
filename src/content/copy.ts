@@ -151,6 +151,12 @@ export const copy = {
     ],
   },
 
+  footer: {
+    prefix: 'Vibecoded by',
+    name: 'Dr Maylyn Tan',
+    url: 'https://www.linkedin.com/in/maylyntan',
+  },
+
   disclaimer:
     "A practice aid for teaching design. Not a diagnostic tool, an accommodation-decision tool, or a legal determination. Formal adjustments are decided by your institution's accessibility service under institutional policy and applicable law.",
 

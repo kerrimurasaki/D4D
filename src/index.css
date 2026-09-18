@@ -48,6 +48,9 @@
   .section-heading {
     @apply mb-4 mt-10 border-t border-line pt-6 text-2xl font-bold;
   }
+  .has-action-bar footer {
+    padding-bottom: 6.5rem;
+  }
   .skip-link {
     @apply absolute left-2 top-2 z-50 -translate-y-24 rounded-lg bg-amber px-4 py-3 font-semibold text-white;
   }
