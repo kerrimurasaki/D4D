@@ -20,12 +20,12 @@ export const copy = {
 
   // The pack's pre-flight table.
   preflight: [
-    ['The material itself', 'Advice on a description of your handout is only advice on the description.'],
-    ['The outcome, as an observable action', '“Understand buoyancy” cannot be redesigned. “Fold a boat that floats for two minutes” can.'],
-    ['Competency vs delivery', 'The competency is protected; everything else is negotiable. Most educators have never separated the two on paper.'],
-    ['Present or standalone', 'If you are in the room, some barriers get handled live. If it is a handout, every one has to be designed out.'],
-    ['Hard constraints', 'Time, room, equipment, assessment regulations. Suggestions you cannot implement waste the exchange.'],
-    ['Known barriers, described by function', '“Two learners cannot use the stairs” is usable. A diagnosis is not yours to put into a general-purpose tool.'],
+    ['Your actual material', 'If you only describe your handout, the AI can only comment on your description. Paste in the real material to get advice on the real thing.'],
+    ['What learners must be able to do (something you can see)', '“Understand buoyancy” is too vague to redesign. “Fold a paper boat that floats for two minutes” is clear, so the AI has something concrete to work with.'],
+    ['The skill versus how you teach it', 'The skill you are assessing must stay the same. How you teach it can change. Most educators have never written these two down separately.'],
+    ['Will you be there?', 'If you are in the room, you can deal with some difficulties as they come up. If learners use the material on their own, such as a handout or an online lesson, every difficulty has to be removed beforehand.'],
+    ['What you cannot change', 'For example, lesson time, room layout, equipment, budget or assessment rules. Advice you cannot carry out is wasted.'],
+    ['Known difficulties, described by what is hard to do', '“Two learners cannot use the stairs” is useful. A diagnosis is not needed, and it is private information that should not go into a public AI tool.'],
   ] as [string, string][],
 
   interview: {
@@ -143,14 +143,14 @@ export const copy = {
   },
 
   stopAndRefer: {
-    title: 'Where to stop and refer',
-    lede: 'AI to understand and to design. Your accessibility or disability service to decide. Stop and refer when:',
+    title: 'When to stop and ask for help',
+    lede: "Use AI to understand the problem and to plan your teaching. Leave decisions to your school's SEN or disability support team. Stop and refer to them when:",
     items: [
-      'A learner asks for a formal adjustment to an assessment, or anything affecting a grade or a progression decision',
-      'You are being asked to judge whether an adjustment is reasonable, or whether it changes what is being assessed',
-      'A learner discloses a diagnosis, a medical condition, or a mental-health difficulty to you',
-      'Needs appear multiple or interacting, or the situation feels beyond ordinary teaching adjustment',
-      'An AI tool gives you a confident, specific accommodation recommendation — that fluency is not expertise, and you are not positioned to check it',
+      'A learner asks for an official change to an assessment, such as access arrangements for an exam, or for anything that affects their grades or promotion.',
+      'You are asked to decide whether a change is fair, or whether it changes what the assessment is testing.',
+      'A learner tells you about a diagnosis, a medical condition or a mental health difficulty.',
+      'A learner seems to have several needs at once, or the situation feels bigger than what everyday teaching changes can handle.',
+      'An AI tool confidently recommends a specific arrangement for a learner. Sounding sure is not the same as being right, and you are not in a position to check its advice.',
     ],
   },
 
@@ -182,8 +182,8 @@ export const copy = {
     procLensAdd: 'add this instead:',
     readyTitle: 'What to have ready before you start',
     readyLede: 'Prompt 0 will ask for all of these. Having them to hand turns a twenty-minute exchange into a five-minute one.',
-    tableNeed: 'What you need',
-    tableWhy: 'Why it changes the answer',
+    tableNeed: 'What to prepare',
+    tableWhy: 'Why it matters',
   },
 
   export: {
