@@ -88,6 +88,9 @@ export const copy = {
     announceCopyAll: (n: number) => `All ${n} prompts copied to clipboard`,
     download: 'Download .md',
     announceDownload: 'Markdown file downloaded',
+    downloadPdf: 'Download PDF',
+    announceDownloadPdf: 'PDF downloaded',
+    preparingPdf: 'Preparing…',
     editAnswers: 'Edit my answers',
     answersTitle: 'Your answers',
     answersHint: 'Change any answer and the prompts above update straight away.',
@@ -183,14 +186,13 @@ export const copy = {
     readyLede: 'Prompt 0 will ask for all of these. Having them to hand turns a twenty-minute exchange into a five-minute one.',
     tableNeed: 'What you need',
     tableWhy: 'Why it changes the answer',
-    version:
-      'Version 2 — adds the routing prompt, the text and procedural lenses, checkpoints, and the sight-independent rewrite. Prepared for Inclusive Education through the lens of “AI”.',
   },
 
   export: {
     heading: 'Design for Variability — your prompts',
     intro: 'Run these in order, one at a time, in the same conversation with your AI assistant.',
     fileName: 'design-for-variability-prompts.md',
+    pdfFileName: 'design-for-variability-prompts.pdf',
   },
 
   titles: {

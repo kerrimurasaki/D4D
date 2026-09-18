@@ -133,10 +133,7 @@ export function AllPromptsPage() {
 
       <StopAndRefer />
 
-      <footer className="mt-8 border-t border-line pt-4 text-sm text-mute">
-        <p>{copy.disclaimer}</p>
-        <p className="mt-3">{pack.version}</p>
-      </footer>
+      <p className="mt-8 border-t border-line pt-4 text-sm text-mute">{copy.disclaimer}</p>
     </div>
   );
 }

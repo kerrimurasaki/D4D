@@ -1,9 +1,10 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { assembleAll } from '../../lib/assemble';
 import { skippedAnswers } from '../../lib/router';
 import { copyAllText, markdownExport } from '../../lib/export';
 import { downloadFile } from '../../lib/clipboard';
+import { downloadPdf } from '../../lib/pdf';
 import { firstIncompleteStep } from '../../lib/validation';
 import { questionForStep } from '../../content/questions';
 import { copy } from '../../content/copy';
@@ -96,6 +97,7 @@ export function ResultsPage() {
 
 function ResultsActions({ items }: { items: ReturnType<typeof assembleAll> }) {
   const announce = useAnnounce();
+  const [busy, setBusy] = useState(false);
 
   // Keeps the site footer clear of the fixed bar while this page is open.
   useEffect(() => {
@@ -108,7 +110,7 @@ function ResultsActions({ items }: { items: ReturnType<typeof assembleAll> }) {
       aria-label={copy.results.actionsLabel}
       className="on-dark fixed inset-x-0 bottom-0 z-10 bg-deep px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3 shadow-card"
     >
-      <div className="mx-auto grid max-w-2xl grid-cols-3 gap-2">
+      <div className="mx-auto grid max-w-2xl grid-cols-2 gap-2 sm:grid-cols-4">
         <CopyButton
           text={copyAllText(items)}
           variant="onDark"
@@ -127,6 +129,22 @@ function ResultsActions({ items }: { items: ReturnType<typeof assembleAll> }) {
           }}
         >
           {copy.results.download}
+        </Button>
+        <Button
+          variant="onDark"
+          className="px-2 text-sm sm:text-base"
+          disabled={busy}
+          onClick={async () => {
+            setBusy(true);
+            try {
+              await downloadPdf(items);
+              announce(copy.results.announceDownloadPdf);
+            } finally {
+              setBusy(false);
+            }
+          }}
+        >
+          {busy ? copy.results.preparingPdf : copy.results.downloadPdf}
         </Button>
         <ButtonLink to="/interview/1" variant="onDark" className="px-2 text-center text-sm sm:text-base">
           {copy.results.editAnswers}
