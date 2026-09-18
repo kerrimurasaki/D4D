@@ -1,7 +1,7 @@
 /** All user-facing strings that are not questions or prompt text. */
 
 export const copy = {
-  appName: 'Design for Variability',
+  appName: 'Design for Differences',
   skipLink: 'Skip to main content',
 
   landing: {
@@ -165,7 +165,7 @@ export const copy = {
 
   pack: {
     kicker: 'Take-home toolkit · version 2',
-    title: 'The Design for Variability Prompt Pack',
+    title: 'The Design for Differences Prompt Pack',
     sub: 'Seven prompts for any AI assistant. Start with prompt 0 — it decides which of the others you need.',
     whyTitle: 'Why prompt 0 exists.',
     why: 'Written material and physical procedures fail in different places. A handout fails on reading load, structure and vocabulary. A folding task, a lab technique or a machine checklist fails on mental rotation, motor demand and packed actions. Run the wrong lens over your material and you get confident, plausible, useless advice — so the pack asks what it is before it advises.',
@@ -174,7 +174,7 @@ export const copy = {
     appCallout: 'Prefer not to answer prompt 0 in a chat window?',
     appCalloutLink: 'Let this app ask the questions instead',
     startHere: 'Start here',
-    coreTitle: 'The four core prompts',
+    coreTitle: 'The four plus two core prompts',
     coreLede:
       'Each has a shared opening and a track-specific lens. Use the lens prompt 0 told you to use. If it said BOTH, run both lenses and merge the findings yourself.',
     textLens: 'Text lens',
@@ -188,18 +188,18 @@ export const copy = {
   },
 
   export: {
-    heading: 'Design for Variability — your prompts',
+    heading: 'Design for Differences — your prompts',
     intro: 'Run these in order, one at a time, in the same conversation with your AI assistant.',
-    fileName: 'design-for-variability-prompts.md',
-    pdfFileName: 'design-for-variability-prompts.pdf',
+    fileName: 'design-for-differences-prompts.md',
+    pdfFileName: 'design-for-differences-prompts.pdf',
   },
 
   titles: {
-    landing: 'Design for Variability',
-    step: (step: number, total: number, name: string) => `Step ${step} of ${total}: ${name} — Design for Variability`,
-    results: 'Your prompts — Design for Variability',
-    prompts: 'All prompts — Design for Variability',
-    notFound: 'Page not found — Design for Variability',
+    landing: 'Design for Differences',
+    step: (step: number, total: number, name: string) => `Step ${step} of ${total}: ${name} — Design for Differences`,
+    results: 'Your prompts — Design for Differences',
+    prompts: 'All prompts — Design for Differences',
+    notFound: 'Page not found — Design for Differences',
   },
 
   notFound: {

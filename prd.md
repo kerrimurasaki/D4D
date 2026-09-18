@@ -1,4 +1,4 @@
-# PRD — Design for Variability (prompt router web app)
+# PRD — Design for Differences (prompt router web app)
 
 **Owner:** Kerri
 **Build agent:** Claude Code
@@ -241,7 +241,7 @@ Interpolate with double braces. If a value is empty, substitute the correspondin
 
 ### Prompt content
 
-Use the text from **The Design for Variability Prompt Pack, version 2** (HTML file
+Use the text from **The Design for Differences Prompt Pack, version 2** (HTML file
 supplied alongside this PRD) verbatim for prompts 1–6, with these modifications:
 
 - Replace the manual `[PASTE]` and `[FROM PROMPT 0]` markers with the placeholders above.

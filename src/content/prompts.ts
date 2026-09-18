@@ -1,7 +1,7 @@
 /**
  * Prompt templates — single source of truth.
  *
- * `packText` is The Design for Variability Prompt Pack, version 2, verbatim. The app's
+ * `packText` is The Design for Differences Prompt Pack, version 2, verbatim. The app's
  * `base` is derived from it by replacing the pack's manual markers only, so the two can
  * never drift apart. The preamble and closing are added by lib/assemble.ts.
  */

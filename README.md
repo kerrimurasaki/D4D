@@ -1,4 +1,4 @@
-# Design for Variability — prompt router
+# Design for Differences — prompt router
 
 Interviews an educator about their teaching material, then recommends and assembles the
 right UDL redesign prompts to paste into any AI assistant. No AI calls, no backend; answers
